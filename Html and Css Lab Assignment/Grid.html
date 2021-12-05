@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 6</title>
+    <style>
+      .container {
+        background-color: green;
+        width: 50%;
+        height: 200px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  
+      }
+
+      .child {
+        background-color: white;
+        border: 2px solid black;
+        margin: 5px;
+      }
+      .child1 {
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="child child1">A</div>
+      <div class="child">B</div>
+      <div class="child">C</div> 
+      <div class="child">D</div>
+      <div class="child">E</div>
+      <div class="child">F</div>
+      <div class="child">G</div>
+    </div>
+  </body>
+</html>

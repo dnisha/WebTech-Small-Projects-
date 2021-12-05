@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question3</title>
+    <style>
+   
+      .container {
+        display: grid;
+        width: 300px;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        border-color: black;
+      }
+      .child1 {
+        padding-left: 75px;
+      }
+      .child {
+        margin-top: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="post">
+      <b>What kind of car would you like to buy ?</b><br /><br />
+      <input type="radio" name="car" />Proton
+      <input type="radio" name="car" />Honda
+      <input type="radio" name="car" />Ferrari
+      <input type="radio" name="car" />Ford <br /><br />
+
+      <b>What colour do you want on your car ?</b><br /><br />
+      <select>
+        <option value="">Black</option>
+        <option value="">Green</option>
+        <option value="">Red</option>
+        <option value="">Yellow</option>
+        <option value="">Blue</option>
+      </select>
+      <span>Other <input type="text" /></span><br /><br />
+
+      <b>Enter other specification of your prefered car :</b><br /><br />
+      <textarea
+        name=""
+        id=""
+        cols="50"
+        rows="8"
+        style="overflow: scroll"
+      ></textarea
+      ><br /><br />
+      <b>Tell us how to get in touch with you :</b><br />
+
+      <div class="container">
+        <div class="child child1">Name</div>
+
+        <div class="child"><input type="text" /></div>
+        <div class="child child1">Email</div>
+        <div class="child"><input type="email" /></div>
+
+        <div class="child child1">Tel</div>
+        <div class="child"><input type="text" /></div>
+        <br />
+      </div>
+      <div>
+        <input type="checkbox" /> Please contact me as soon as possible
+        regarding this matter.
+      </div>
+      <div>My email: <a href="">ezmir.razail@mmu.edu.my</a></div><br>
+
+      <button type="submit">Send</button>
+      <button type="reset">Clear</button>
+    </form><br>
+    <a href="index.html">Back to Main Page</a>
+  </body>
+</html>

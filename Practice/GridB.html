@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        /* grid-template-rows: ; */
+
+        background-color: red;
+        width: 300px;
+        height: 300px;
+        row-gap: 10px;
+        column-gap: 5px;
+      }
+      .item {
+        background-color: aquamarine;
+      }
+
+      .item1 {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start:1 ;
+        grid-row-end: 5;
+        background-color: blueviolet;
+      }
+      .item2{
+         grid-column-start: 2;
+         grid-column-end: 5;
+      }
+      .item9 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="item item1">Header</div>
+      <div class="item item2">Two</div>
+      <div class="item item3">Three</div>
+      <div class="item item4">Four</div>
+      <div class="item item5">Five</div>
+      <div class="item item6">Six</div>
+      <div class="item item7">seven</div>
+      <div class="item">Six</div>
+      <div class="item">seven</div>
+      <div class="item item8">eight</div>
+      <div class="item">eight</div>
+      <div class="item">eight</div>
+      <div class="item">eight</div>
+      <div class="item">eight</div>
+      <div class="item">eight</div>
+      <div class="item item9">footer</div>
+    </div>
+  </body>
+</html>
