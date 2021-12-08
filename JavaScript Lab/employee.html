@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Details</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+      .container {
+        margin-top: 150px;
+        display: grid;
+        background-color: aqua;
+        height: 500px;
+        width: 60%;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .child {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+        margin: 4px;
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <grid class="container">
+      <div class="child" id="child1">Name</div>
+      <div class="child" id="child2"></div>
+      <div class="child" id="child3">Age</div>
+      <div class="child" id="child4"></div>
+      <div class="child" id="child5">Salary</div>
+      <div class="child" id="child6"></div>
+    </grid>
+
+    <script>
+      let name = "Rohan";
+      document.getElementById("child2").style.color = "red"
+      document.getElementById("child2").style.background = "yellow"
+      document.getElementById("child2").innerHTML = name;
+
+      let age = 24;
+      document.getElementById("child4").style.color = "red"
+      document.getElementById("child4").style.background = "yellow"
+      document.getElementById("child4").innerHTML = age;
+
+      let salary = 50000;
+      document.getElementById("child6").style.color = "red"
+      document.getElementById("child6").style.background = "yellow"
+      document.getElementById("child6").innerHTML = salary;
+    </script>
+  </body>
+</html>

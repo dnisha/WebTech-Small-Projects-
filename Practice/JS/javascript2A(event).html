@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function display() {
+        for (i = 0; i < 10; i++) document.write(" welcome ");
+        document.body.style.backgroundColor = "blue";
+      }
+
+      function onloaddata() {
+        document.body.style.backgroundColor = "red";
+      }
+
+      function onunloaddata() {
+        window.alert("unloded");
+      }
+    </script>
+  </head>
+  <body onload="onloaddata()" onunload="onunloaddata">
+    <input type="button" value="send" onclick="alert('hello')" />
+    <input type="button" value="display" onclick="display()" />
+  </body>
+</html>

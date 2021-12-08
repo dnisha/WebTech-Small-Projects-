@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <body>
+    <form action="dashbord.html" onsubmit="return validation()" method="post" class="container">
+      <div class="child">Enter Username</div>
+      <input type="text" class="child" id="username" />
+      <p class="child" id="err1"></p>
+      <div class="child">Enter Password</div>
+      <input type="password" class="child" id="password" />
+      <button class="child" type="submit">Login</button>
+      <p class="child" id="err2"></p>
+    </form>
+
+    <script>
+      let a = document.getElementById("username").value;
+      let b = document.getElementById("password").value;
+
+      function validation() {
+        return true
+        // if (a == "" || a == null) {
+        //   document.getElementById("err1").innerHTML = "Please Enter Username";
+        //   return false;
+        // } else if (b == "" || b == null) {
+        //   document.getElementById("err2").innerHTML = "Please Enter Password";
+        //   return true
+        // }
+        // else{
+       
+        // }
+      }
+    </script>
+  </body>
+</html>

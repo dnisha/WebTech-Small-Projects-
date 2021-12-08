@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sum of Three Numbers</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .container {
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: aqua;
+        height: 200px;
+        width: 20%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+      }
+
+      .child {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 4px;
+
+        padding: 15px;
+        height: 50px;
+
+        font-size: large;
+
+        font-size: larger;
+      }
+
+      #answer {
+        font-size: 50px;
+        font-weight: 200;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <h1 class="child">Sum of Three Numbers</h1>
+      <input type="button" class="child" value="SUM" onclick="sum()" />
+      <div class="child" id="answer"></div>
+    </div>
+
+    <script>
+      function sum() {
+        let a = prompt("Enter First Number");
+        let b = prompt("Enter Second Number");
+        let c = prompt("Enter Third Number");
+        document.getElementById("answer").innerHTML = parseInt(a) + parseInt(b)+parseInt(c);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function printform() {
+        var m;
+        var n = document.getElementById("user").value;
+        var n1 = document.getElementById("pass").value;
+        if (n == "" || n == null) {
+          document.getElementById("k1").innerHTML = "username cannot be empty";
+          document.getElementById("k1").style.color = "red";
+          m = false;
+        } else {
+          document.getElementById("k1").innerHTML = "";
+          m = true;
+        }
+        if (n1 == "" || n1 == null) {
+          document.getElementById("k2").innerHTML = "password cannot be empty";
+          document.getElementById("k2").style.color = "red";
+          m = false;
+        } else {
+          document.getElementById("k2").innerHTML = "";
+          m = true;
+        }
+     
+        return m;
+      }
+    </script>
+  </head>
+  <body>
+    <form onsubmit="return printform()" action="javascript4Bequal.html">
+      username<input type="text" id="user" name="user" />
+      <span id="k1"></span>
+      <br />
+      password<input type="password" id="pass" name="pass" />
+      <span id="k2"></span>
+      <br />
+      <input type="submit" name="submit" value="send" /><br />
+    </form>
+  </body>
+</html>
